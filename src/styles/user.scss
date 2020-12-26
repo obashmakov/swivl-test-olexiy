@@ -39,3 +39,15 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .user {
+    width: auto;
+
+    &__photo,
+    &__arrow,
+    &__name {
+      display: none;
+    }
+  }
+}

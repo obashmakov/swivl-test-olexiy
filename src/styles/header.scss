@@ -33,3 +33,35 @@
     margin-right: 135px;
   }
 }
+
+@media (max-width: $desktop-width) {
+  .header {
+    &__logo {
+      margin-left: 60px;
+    }
+
+    &__user {
+      margin-right: 60px;
+    }
+  }
+}
+
+@media (max-width: $phone-width) {
+  .header {
+    &__container {
+      height: 80px;
+    }
+
+    &__top {
+      padding-top: 10px;
+    }
+
+    &__logo {
+      margin-left: 20px;
+    }
+
+    &__user {
+      margin-right: 20px
+    }
+  }
+}
