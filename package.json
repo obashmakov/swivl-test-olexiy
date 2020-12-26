@@ -1,0 +1,32 @@
+{
+  "name": "swivl-test-olexiy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obashmakov/swivl-test-olexiy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/obashmakov/swivl-test-olexiy/issues"
+  },
+  "homepage": "https://github.com/obashmakov/swivl-test-olexiy#readme",
+  "devDependencies": {
+    "@mate-academy/eslint-config": "0.0.13",
+    "eslint": "^7.16.0",
+    "eslint-plugin-node": "^11.1.0",
+    "husky": "^4.3.6"
+  }
+}
