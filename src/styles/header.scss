@@ -1,5 +1,9 @@
-.header { 
+.header {
+  position: sticky;
+  top: 0;
+
   &__container {
+    z-index: 5;
     height: 112px;
     max-width: 1440px;
     margin: 0 auto ;

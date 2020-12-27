@@ -17,7 +17,12 @@ a {
   text-decoration: none;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+}
 .header__container {
+  z-index: 5;
   height: 112px;
   max-width: 1440px;
   margin: 0 auto;
@@ -163,6 +168,134 @@ a {
     height: 2px;
   }
 }
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  background-color: #ecf1f8;
+}
+
+.profile__container {
+  width: 350px;
+  margin-left: 135px;
+  display: flex;
+  flex-direction: column;
+}
+.profile__info {
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+.profile__options {
+  align-self: start;
+  cursor: pointer;
+  transition: 300ms;
+}
+.profile__options:hover {
+  filter: invert(40%) grayscale(100%) brightness(70%) sepia(80%) hue-rotate(-50deg) saturate(400%) contrast(2);
+}
+.profile__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.person__name {
+  max-width: 145px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.person__nickname {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+.person__edit {
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.person__edit-icon {
+  margin-right: 10px;
+}
+.person__edit-link {
+  color: #f05d63;
+  margin-bottom: 3px;
+  text-decoration: underline;
+  transition: 300ms;
+}
+.person__edit-link:hover {
+  color: #9c1b1f;
+}
+
+.contacts__block {
+  margin-top: 36px;
+  margin-bottom: 23px;
+  text-align: center;
+}
+.contacts__block:last-child {
+  margin-right: 66px;
+}
+.contacts__number {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.posts__switch {
+  width: 202px;
+  margin-top: 72px;
+  margin-left: 57px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.switch {
+  display: flex;
+}
+.switch__label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+.switch__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch__input:checked + .switch__slider {
+  background-color: #ed5267;
+}
+.switch__input:checked + .switch__slider::before {
+  transform: translateX(15px);
+}
+.switch__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 300ms;
+  border-radius: 34px;
+}
+.switch__slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 300ms;
+  border-radius: 50%;
+}
+
 *,
 ::after,
 ::before {

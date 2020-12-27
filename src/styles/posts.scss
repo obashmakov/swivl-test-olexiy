@@ -1,0 +1,13 @@
+.posts {
+  &__switch {
+    width: 202px;
+    margin-top: 72px;
+    margin-left: 57px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
