@@ -1,0 +1,16 @@
+.contacts {
+  &__block {
+    margin-top: 36px;
+    margin-bottom: 23px;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 66px;
+    }
+  }
+
+  &__number {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

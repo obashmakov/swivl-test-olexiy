@@ -1,0 +1,47 @@
+.person {
+  &__name {
+    max-width: 145px;
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+
+  &__nickname {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+  }
+
+  &__edit {
+    height: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__edit-icon {
+    margin-right: 10px;
+  }
+
+  &__edit-link {
+    color: $link-orange;
+    margin-bottom: 3px;
+    text-decoration: underline;
+    transition: 300ms;
+
+    &:hover {
+      color: $link-orange-hover;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .person {
+    &__name {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.plus {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+  
+  transition: 300ms;
+  cursor: pointer;
+
+  &__line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 20px;
+    height: 1.82px;
+
+    background-color: white;
+
+    &::after {
+      position: absolute;
+      transform: rotate(90deg);
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 1.82px;
+  
+      background-color: white;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .plus {
+    display: none;
+  }
+}

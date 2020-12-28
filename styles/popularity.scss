@@ -1,0 +1,38 @@
+.popularity {
+  display: flex;
+
+  &__button {
+    width: 48px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    &:first-child {
+      margin-right: 16px;
+    }
+
+    &:hover > .popularity__likes {
+      transition: 300ms;
+      transform: scale(1.2);
+    }
+  }
+
+  &__views,
+  &__likes {
+    margin-right: 8px;
+  }
+
+  &__likes {
+    transition: 300ms;
+  }
+}

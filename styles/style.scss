@@ -1,0 +1,36 @@
+@import "variables";
+@import "reset";
+@import "header";
+@import "plus";
+@import "user";
+@import "nav";
+@import "main";
+@import "profile";
+@import "options";
+@import "person";
+@import "contacts";
+@import "posts";
+@import "switch";
+@import "post";
+@import "popularity";
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  color: $text-color;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
