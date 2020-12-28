@@ -79,3 +79,31 @@
     }
   }
 }
+
+@media (max-width: $desktop-width) {
+  .post {
+    width: 280px;
+    height: 230px;
+
+    &__shared {
+      font-size: 12px;
+    }
+
+    &__email {
+      width: 170px;
+    }
+
+    &__text {
+      font-size: 24px;
+    }
+
+    &__name {
+      font-size: 12px;
+    }
+
+    &__point {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

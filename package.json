@@ -1,12 +1,14 @@
 {
   "name": "swivl-test-olexiy",
+  "homepage": "https://github.com/obashmakov/swivl-test-olexiy#readme",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ./src",
-    "start": "http-server ./src -c-1"
+    "start": "http-server ./src -c-1",
+    "deploy": "gh-pages -d src"
   },
   "repository": {
     "type": "git",
@@ -23,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/obashmakov/swivl-test-olexiy/issues"
   },
-  "homepage": "https://github.com/obashmakov/swivl-test-olexiy#readme",
   "devDependencies": {
     "@mate-academy/eslint-config": "0.0.13",
     "eslint": "^7.16.0",
@@ -31,6 +32,7 @@
     "husky": "^4.3.6"
   },
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "http-server": "^0.12.3"
   }
 }

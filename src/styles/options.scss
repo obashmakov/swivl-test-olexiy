@@ -3,18 +3,15 @@
 
   &__dots {
     cursor: pointer;
-    transition: 300ms;
+    filter: invert(40%) grayscale(100%) brightness(70%) sepia(80%) hue-rotate(-50deg) saturate(400%) contrast(2);
 
-    &:hover {
-      filter: invert(40%) grayscale(100%) brightness(70%) sepia(80%) hue-rotate(-50deg) saturate(400%) contrast(2);;
+    &--disable {
+      filter: none;
     }
   }
 
   &__window {
-    display: none;
-  }
-
-  &__window--active {
+    visibility: hidden;
     position: absolute;
     top: 40px;
 
@@ -28,6 +25,10 @@
     background-color: white;
     border-radius: 8px;
     opacity: 0.9;
+  }
+
+  &__window--active {
+    visibility: visible;
   }
 
   &__privacy {
@@ -45,5 +46,26 @@
 
   &__icon {
     margin-right: 16px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .options {
+    &__window {
+      left: -160px;
+      visibility: visible;
+    }
+
+    &__window--active {
+      visibility: hidden;
+    }
+
+    &__dots {
+      filter: none;
+
+      &--disable {
+        filter: invert(40%) grayscale(100%) brightness(70%) sepia(80%) hue-rotate(-50deg) saturate(400%) contrast(2)
+      }
+    }
   }
 }

@@ -12,7 +12,9 @@ likes.forEach(
 
 const profileOptions = document.querySelector('.options__dots');
 const optionsWindow = document.querySelector('.options__window');
+const optionDots = document.querySelector('.options__dots');
 
 profileOptions.addEventListener('click', function() {
   optionsWindow.classList.toggle('options__window--active');
+  optionDots.classList.toggle('options__dots--disable');
 });

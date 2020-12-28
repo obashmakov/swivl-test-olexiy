@@ -12,12 +12,34 @@
     justify-content: space-between;
   }
 
-  &__options {
-    align-self: start;
-  }
-
   &__contacts {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 1220px) {
+  .profile {
+    &__container {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .profile {
+    &__container {
+      width: 280px;
+    }
+
+    &__info {
+      width: 280px;
+      margin-top: 52px;
+    }
+
+    &__photo {
+      width: 100px;
+      height: 100px;
+    }
   }
 }
