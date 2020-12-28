@@ -75,6 +75,10 @@
             </li>
           </ul>
         </nav>
+
+        <div class="header__plus plus">
+          <span class="plus__line"></span>
+        </div>
       </div>
     </header>
 
@@ -105,11 +109,24 @@
                 </a>
               </div>
             </div>
-            <img
-              class="profile__options"
-              src="./images/icon_3_dots_menu.svg"
-              alt="dots"
-            >
+            <div class="profile__options options">
+              <img
+                class="options__dots"
+                src="./images/icon_3_dots_menu.svg"
+                alt="dots"
+              >
+
+              <div class="options__window options__window--active">
+                <div class="options__privacy">
+                  <img class="options__icon" src="./images/icon_report.svg" alt="report-icon">
+                  Report User
+                </div>
+                <div class="options__privacy">
+                  <img class="options__icon" src="./images/icon_block.svg" alt="block-icon">
+                  Block User
+                </div>
+              </div>
+            </div>
           </div>
   
           <div class="profile__contacts contacts">
@@ -152,10 +169,109 @@
         </div>
 
         <div class="posts__container">
-          <div>
+          <div class="posts__post post">
+            <p class="post__text">
+              New air routes that promise cheap flights in
+            </p>
+            <div class="post__info">
+              <div class="post__name">
+                <span class="post__point"></span>
+                <span class="post__user">Gregory Watkins</span>
+              </div>
+              <a class="post__share" href="#">Share</a>
+            </div>
+          </div>
+
+          <div class="posts__post post">
+            <p class="post__text">
+              New air routes that promise cheap flights in
+            </p>
+            <div class="post__info">
+              <div class="post__name">
+                <span class="post__point"></span>
+                <span class="post__user">Gregory Watkins</span>
+              </div>
+              <a class="post__share" href="#">Share</a>
+            </div>
+          </div>
+
+          <div class="posts__post post">
+            <div class="post__shared">
+              Shared to
+              <span class="post__email" title="#discussionaboutanimgttddssssdddfff@gmail.com">
+                #discussionaboutanimgttddssssdddfff@gmail.com
+              </span>
+            </div>
+            <p class="post__text">
+              New air routes that promise cheap flights in
+            </p>
+            <div class="post__info">
+              <div class="post__name">
+                <span class="post__point"></span>
+                <span class="post__user">Gregory Watkins</span>
+              </div>
+              <div class="post__popularity popularity">
+                <button class="popularity__button">
+                  <img
+                    class="popularity__views"
+                    src="./images/icon_view.svg"
+                    alt="views"
+                  >
+                  88
+                </button>
+                <button class="popularity__button popularity__button--liked">
+                  <img
+                    class="popularity__likes"
+                    src="./images/icon_like.svg"
+                    alt="views"
+                  >
+                  <span class="popularity__liked">24</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="posts__post post">
+            <div class="post__shared">
+              <img
+                class="post__link-icon"
+                src="./images/icon_link.svg"
+                alt="link-icon"
+              >
+              Shared via weblink
+            </div>
+            <p class="post__text">
+              New air routes that promise cheap flights in
+            </p>
+            <div class="post__info">
+              <div class="post__name">
+                <span class="post__point"></span>
+                <span class="post__user">Gregory Watkins</span>
+              </div>
+              <div class="post__popularity popularity">
+                <button class="popularity__button">
+                  <img
+                    class="popularity__views"
+                    src="./images/icon_view.svg"
+                    alt="views"
+                  >
+                  88
+                </button>
+                <button class="popularity__button popularity__button--liked">
+                  <img
+                    class="popularity__likes"
+                    src="./images/icon_like.svg"
+                    alt="views"
+                  >
+                  <span class="popularity__liked">24</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>

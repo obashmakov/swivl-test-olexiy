@@ -27,13 +27,13 @@
   }
 
   &__edit-link {
-    color:#f05d63;
+    color: $link-orange;
     margin-bottom: 3px;
     text-decoration: underline;
     transition: 300ms;
 
     &:hover {
-      color: #9c1b1f;
+      color: $link-orange-hover;
     }
   }
 }

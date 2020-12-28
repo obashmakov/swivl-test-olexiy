@@ -1,8 +1,17 @@
 .posts {
+  &__container {
+    margin-top: 62px;
+    margin-bottom: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 374px);
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+
   &__switch {
     width: 202px;
     margin-top: 72px;
-    margin-left: 57px;
+    margin-left: 10px;
 
     display: flex;
     justify-content: space-between;

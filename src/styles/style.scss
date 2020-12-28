@@ -1,14 +1,18 @@
 @import "variables";
 @import "reset";
 @import "header";
+@import "plus";
 @import "user";
 @import "nav";
 @import "main";
 @import "profile";
+@import "options";
 @import "person";
 @import "contacts";
 @import "posts";
 @import "switch";
+@import "post";
+@import "popularity";
 
 *,
 ::after,
@@ -24,4 +28,9 @@ html {
 @font-face {
   font-family: "Open Sans";
   src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
 }
